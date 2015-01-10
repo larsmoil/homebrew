@@ -5,6 +5,7 @@ class Shairport < Formula
   homepage 'https://github.com/albertz/shairport'
 
   depends_on 'libao'
+  depends_on "pkg-config" => :build
 
   def install
     system "mkdir #{bin}"
